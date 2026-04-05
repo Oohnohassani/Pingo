@@ -1,0 +1,185 @@
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(150deg, rgb(0, 0, 0) 0%, rgba(4, 23, 13, 0.705) 100%),
+    url("../assets/background.png");
+  /* url("https://images.unsplash.com/photo-1715940309860-585403114687?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* url("https://images.pexels.com/photos/209154/pexels-photo-209154.jpeg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(20px);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 10rem 5%;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 55%;
+}
+
+.heroTitle {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Varela Round", sans-serif;
+  color: var(--color-light--3);
+  line-height: 1.2;
+}
+
+.pingo {
+  width: 100%;
+  background: linear-gradient(90deg, #034b36, #00ad09);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 1rem;
+  font-size: 6rem;
+}
+
+.heroDescription {
+  font-size: 1.6rem;
+  color: var(--color-light--4);
+  line-height: 1.6;
+  width: 80%;
+}
+
+.heroButton {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 1.2rem 3rem;
+  background: var(--color-brand--3);
+  color: var(--color-dark--0);
+  border-radius: 0.6rem;
+  text-transform: capitalize;
+  transition: all 0.35s ease;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* arrow animation setup */
+.heroButton span {
+  display: inline-block;
+  margin-left: 0.4rem;
+  transition: transform 0.35s ease;
+}
+
+/* light sweep */
+.heroButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transition: all 0.6s ease;
+}
+
+/* hover state */
+.heroButton:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.35),
+    0 0 20px rgba(72, 156, 83, 0.6);
+}
+
+/* arrow moves forward */
+.heroButton:hover span {
+  transform: translateX(6px);
+}
+
+/* light sweep animation */
+.heroButton:hover::before {
+  left: 120%;
+}
+
+/* click feedback */
+.heroButton:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* .heroImage {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .heroImage img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 2rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  transform: rotate(-6deg);
+  transition: transform 0.4s ease;
+}
+
+.heroImage img:hover {
+  transform: rotate(0deg) scale(1.05);
+} */
+
+.heroImage {
+  width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 2rem;
+  transform: rotate(-8deg);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.18);
+  transition: transform 0.4s ease;
+}
+
+.heroImage img:hover {
+  transform: rotate(-2deg) scale(1.06);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 12rem;
+    padding: 8rem 5%;
+  }
+
+  .heroContent {
+    width: 100%;
+    align-items: center;
+  }
+
+  .heroTitle {
+    font-size: 4.5rem;
+  }
+
+  .heroDescription {
+    font-size: 1.5rem;
+  }
+
+  .heroImage {
+    width: 100%;
+  }
+}

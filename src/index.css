@@ -1,0 +1,186 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;600;700;800&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* These CSS variables are global, so they are available in all CSS modules */
+:root {
+  --color-brand--1: #ffb545;
+  /* --color-brand--2: #00c46a; */
+  --color-brand--2: #00ad09;
+  --color-brand--3: #489c53;
+  --color-brand--4: #034b36;
+  --color-brand--5: #a3f7a3;
+
+  --color-dark--0: #242a2e;
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: #d6dee0;
+  --color-light--4: #f0f8ff9a;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  color: var(--color-light--2);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  background-color: var(--color-dark--0);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-light--3);
+}
+
+link {
+  height: 128px;
+  width: 128px;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-light--3);
+  transition: all 0.2s;
+}
+
+input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  /* font-weight: 600; */
+}
+
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--1);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+}
+
+section {
+  padding: 0rem 5%;
+}
+
+/*
+"importCSSModule": {
+    "prefix": "csm",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
+    "description": "Import CSS Module as `styles`"
+  },
+*/
+
+/* Highlighted card background */
+.highlightCard {
+  background: linear-gradient(135deg, #034b36, #00ad09);
+
+  color: white;
+}
+
+/* Custom button */
+.btn {
+  background-color: var(--color-brand--3);
+  padding: 1.2rem 2.4rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  color: var(--color-dark--0);
+}
+
+.primaryBtn {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.primaryBtn:hover {
+  background: white;
+  color: black;
+}
+
+.planFeaturesBackground {
+  background: var(--color-brand--1);
+}
+
+/* MAP */
+#map {
+  height: 100%;
+  width: 300vh; /* FIXME LATER */
+}

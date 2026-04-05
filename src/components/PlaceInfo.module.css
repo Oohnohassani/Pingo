@@ -1,0 +1,98 @@
+.placeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 2.6rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--color-dark--1);
+  height: 37rem;
+  width: 90%;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+  overflow-y: scroll;
+}
+
+/* Whole scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+  display: none;
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.placeInfo h6 {
+  font-size: 1.2rem;
+}
+
+.placeInfo p {
+  font-size: 1.3rem;
+  color: var(--color-light--2);
+}
+
+.place div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 2rem;
+
+  /* border: 1px solid salmon; */
+}
+
+.place div span:first-of-type {
+  font-size: 1.4rem;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.link a {
+  color: var(--color-brand--3);
+  font-size: 1.4rem;
+}
+
+.backbtn {
+  border: 1px solid var(--color-light--4);
+  background: none;
+  color: var(--color-light--4);
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}

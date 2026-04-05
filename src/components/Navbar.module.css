@@ -1,0 +1,30 @@
+.nav {
+  width: 100%;
+  padding: 2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 6rem;
+}
+
+.nav ul li a {
+  font-size: 1.6rem;
+  transition: all ease 0.5s;
+}
+
+.nav ul li a:hover {
+  color: var(--color-brand--3);
+}
+
+/* Scope the global active class to our nav */
+.nav :global(a.active) {
+  color: var(--color-brand--3) !important;
+  background: none !important;
+}

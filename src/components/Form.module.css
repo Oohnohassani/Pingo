@@ -1,0 +1,243 @@
+.formwrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(36, 42, 46, 0.966), rgba(36, 42, 46, 0.932)),
+    url("../assets/wavy.png");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  width: 750px;
+  height: 500px;
+  background: var(--color-dark--1);
+  border-radius: 10px;
+  overflow: hidden;
+
+  position: relative;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.createAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1rem 2rem;
+}
+
+.createAccount h3 {
+  color: var(--color-brand--3);
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icons span {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-dark--2);
+  cursor: pointer;
+  color: var(--color-brand--3);
+  transition: all ease 0.5s;
+}
+
+.icons span:hover {
+  background-color: var(--color-brand--3);
+  color: var(--color-light--2);
+}
+
+.createAccount p {
+  color: var(--color-light--1);
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.inputs input {
+  border-radius: 1rem;
+  padding: 1.4rem 2rem;
+  background-color: var(--color-dark--2);
+  color: var(--color-brand--3);
+  /* transition: all ease 0.5s; */
+}
+
+.inputs input:active {
+  background-color: var(--color-dark--0) !important;
+}
+
+.inputs input:focus {
+  outline: 2px solid var(--color-brand--3);
+}
+
+.signup {
+  border-radius: 2rem;
+  background: transparent;
+  border: 1px solid var(--color-brand--3);
+  padding: 1rem 2rem;
+  color: var(--color-brand--3);
+  font-size: 1.6rem;
+  width: 14rem;
+  margin-top: 1rem;
+  transition: all ease 0.5s;
+}
+
+.signup:hover {
+  background-color: var(--color-brand--2);
+  color: var(--color-light--2);
+}
+
+/* SIGNIN */
+.signinAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1rem 2rem;
+}
+
+.signin {
+  border-radius: 2rem;
+  background: transparent;
+  border: 1px solid var(--color-brand--3);
+  padding: 1rem 2rem;
+  color: var(--color-brand--3);
+  font-size: 1.6rem;
+  width: 14rem;
+  margin-top: 1rem;
+  transition: all ease 0.5s;
+}
+
+.signinAccount h3 {
+  color: var(--color-brand--3);
+  text-align: center;
+}
+
+.signinAccount .icons span a {
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.signinAccount p {
+  color: var(--color-light--1);
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.signin:hover {
+  background-color: var(--color-brand--2);
+  color: var(--color-light--2);
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+
+  background:
+    linear-gradient(135deg, rgb(1, 65, 46), rgba(0, 173, 9, 0.829)),
+    url("../assets/about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  transition: all ease 0.7s;
+}
+
+.overlay .logo {
+  width: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.overlay .logo img {
+  width: 100%;
+  filter: invert(1) brightness(1.4);
+}
+
+.overlay h3 {
+  font-size: 2.8rem;
+  width: 70%;
+  text-align: center;
+  color: var(--color-light--3);
+  transition: all ease 0.5s;
+}
+
+.overlay p {
+  width: 70%;
+  color: var(--color-light--2);
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: center;
+  transition: all ease 0.5s;
+}
+
+.overlay button {
+  color: var(--color-light--2);
+  border: 1px solid var(--color-light--2);
+}
+
+.overlay button:hover {
+  color: var(--color-light--2);
+  border: 1px solid var(--color-brand--2);
+}
+
+/* isACTIVE class */
+.isActive {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.opacity {
+  opacity: 0.3;
+}

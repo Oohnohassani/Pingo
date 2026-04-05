@@ -1,0 +1,229 @@
+.ActionsMenu {
+  width: 25rem;
+  height: fit-content;
+  background-color: var(--color-dark--2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  position: absolute;
+  top: -30rem;
+  right: -25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 999;
+  /* overflow: hidden; */
+}
+
+.actions {
+  width: 100%;
+  /* overflow: hidden; */
+  padding: 0.5rem;
+}
+
+.action {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all ease 0.5s;
+}
+
+.action span {
+  color: var(--color-light--4);
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+.action span:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action span:last-of-type {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.action:hover {
+  background-color: var(--color-dark--1);
+}
+
+.boderTop {
+  border-top: 1px solid rgba(255, 255, 255, 0.178);
+}
+
+.help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.helpAction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chevronRightIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light--4);
+}
+
+.action button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-light--4);
+  width: 100%;
+  text-align: left;
+}
+
+/* User */
+.user {
+  width: 100%;
+  padding: 0 0 0.5rem 0;
+  cursor: pointer;
+}
+
+.userDetails {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  transition: all ease 0.5s;
+}
+
+.userDetails:hover {
+  background-color: var(--color-dark--0);
+}
+
+.userProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.userProfile img {
+  width: 100%;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.userInfo h6 {
+  font-size: 1.2rem;
+  text-transform: lowercase;
+  color: var(--color-light--2);
+  font-weight: 500;
+}
+
+.userInfo p {
+  font-size: 1.1rem;
+  color: var(--color-light--4);
+  font-weight: 300;
+}
+
+/* HELP ACTIONS */
+.helpActions {
+  position: absolute;
+  right: -20rem;
+  top: 0;
+  width: 20rem;
+  height: fit-content;
+  background-color: var(--color-dark--2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+  z-index: 999;
+  overflow: hidden;
+}
+
+.helpActionsAction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all ease 0.5s;
+}
+
+.helpActionsAction {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.helpActionsAction span {
+  color: var(--color-light--4);
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+.helpActionsAction span:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.helpActionsAction span:last-of-type {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.helpActionsAction:hover {
+  background-color: var(--color-dark--1);
+}
+
+/* KEYBOARD SHORTCUTS */
+p.keyboardShortCuts {
+  font-size: 1rem;
+  color: var(--color-light--4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+p.keyboardShortCuts span {
+  font-size: 1rem;
+  background-color: var(--color-dark--2);
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 1rem;
+}
+
+/* TIPPY */

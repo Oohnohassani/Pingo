@@ -1,0 +1,96 @@
+.pricing {
+  width: 100%;
+  padding: 8rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+h6 {
+  color: var(--color-light--4);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.pricingCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pricingHeader {
+  text-align: center;
+}
+
+.pricingHeader p {
+  font-size: 1.6rem;
+  color: var(--color-light--4);
+  font-weight: 300;
+}
+
+.italic {
+  background: linear-gradient(90deg, #034b36, #00ad09);
+  padding: 0 1rem;
+}
+
+.pricingToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pricingToggle p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-light--4);
+}
+
+.toggle {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 1.4rem;
+  background-color: var(--color-dark--2);
+  width: 6rem;
+  height: 2.6rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.toggle span {
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-dark--0);
+  border-radius: 50%;
+
+  /* Transition */
+  transition: all 0.5s ease;
+}
+
+.discount {
+  background: linear-gradient(90deg, #034b36, #00ad09);
+  border-radius: 1.4rem;
+  padding: 0.5rem 0.71rem;
+  color: var(--color-light--4);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.faq {
+  margin-top: 6rem;
+}
+
+/* Active class */
+.active {
+  background-color: var(--color-brand--2);
+  transition: all 0.5s ease;
+}
+
+.active span {
+  transform: translateX(3rem);
+}

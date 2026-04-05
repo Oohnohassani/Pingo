@@ -1,0 +1,76 @@
+.keyboardShortCuts {
+  width: 100%;
+  gap: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 22rem;
+  margin: 4rem 0 0 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.logo:hover img {
+  filter: grayscale(0%) brightness(0.6);
+}
+
+.shortcut {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+
+.shortcuts {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--color-light--4);
+}
+
+.keys {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.keys p:first-of-type {
+  font-size: 1.45rem;
+  font-weight: 300;
+}
+
+.keys p:last-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.keys p:last-of-type span {
+  background-color: var(--color-dark--2);
+  border-radius: 0.4rem;
+  padding: 0.2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}

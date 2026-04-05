@@ -1,0 +1,101 @@
+{
+  "places": [
+    {
+      "placeName": "Seoul",
+      "country": "South Korea",
+      "emoji": "🇰🇷",
+      "date": "2027-09-01T10:00:00.000Z",
+      "notes": "Dynamic metropolis blending modern skyscrapers with historic palaces. Great street food, shopping districts, and rich cultural experiences.",
+      "position": {
+        "lat": 37.5665,
+        "lng": 126.978
+      },
+      "id": "333337777"
+    },
+    {
+      "placeName": "Durban",
+      "country": "South Africa",
+      "emoji": "🇿🇦",
+      "date": "2027-04-10T14:02:09.547Z",
+      "notes": "Warm coastal city with a laid-back vibe. Strong beach culture, great Indian food, humid weather, and a slower rhythm of life.",
+      "position": {
+        "lat": -29.8586804,
+        "lng": 31.0218404
+      },
+      "id": "777772222"
+    },
+    {
+      "placeName": "Kyoto",
+      "country": "Japan",
+      "emoji": "🇯🇵",
+      "date": "2027-05-15T09:30:00.000Z",
+      "notes": "Historic city with beautiful temples, serene gardens, and traditional tea houses. Famous for cherry blossom season.",
+      "position": {
+        "lat": 35.011636,
+        "lng": 135.768029
+      },
+      "id": "888883333"
+    },
+    {
+      "placeName": "Vancouver",
+      "country": "Canada",
+      "emoji": "🇨🇦",
+      "date": "2027-07-05T11:15:00.000Z",
+      "notes": "Scenic west coast city with mountains and ocean. Outdoor activities abound—skiing, hiking, and kayaking. Diverse multicultural food scene.",
+      "position": {
+        "lat": 49.282729,
+        "lng": -123.120738
+      },
+      "id": "111115555"
+    },
+    {
+      "placeName": "Rio de Janeiro",
+      "country": "Brazil",
+      "emoji": "🇧🇷",
+      "date": "2027-08-12T18:00:00.000Z",
+      "notes": "Iconic city with famous beaches like Copacabana, vibrant carnival culture, and the Christ the Redeemer statue overlooking the city.",
+      "position": {
+        "lat": -22.906847,
+        "lng": -43.172897
+      },
+      "id": "222226666"
+    },
+    {
+      "id": "329d",
+      "placeName": "Big Bear City",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2015-03-11T21:00:00.000Z",
+      "notes": "Big bear in the building 🐻",
+      "position": {
+        "lat": "34.19817309627726",
+        "lng": "-116.66923871272094"
+      }
+    },
+    {
+      "id": "9aa1",
+      "placeName": "Santa Cruz Das Flores",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2023-06-15T21:00:00.000Z",
+      "notes": "Charming coastal city in the Azores known for volcanic landscapes, ocean views, natural hot springs, and lush greenery, offering a peaceful island vibe with unique nature experiences.",
+      "position": {
+        "lat": "39.497152941537486",
+        "lng": "-31.158105684485456"
+      }
+    },
+    {
+      "id": "d1be",
+      "placeName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2023-04-05T21:00:00.000Z",
+      "notes": " Calm, wavy hillside city filled with greenery, scenic viewpoints, and historic streets, known for its relaxed atmosphere, trams, and beautiful tree-lined neighborhoods overlooking the river.🪴",
+      "position": {
+        "lat": "38.71123253895227",
+        "lng": "-9.176075728898194"
+      }
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

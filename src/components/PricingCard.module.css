@@ -1,0 +1,152 @@
+.cardWrapper {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-dark--2);
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--color-light--2);
+}
+
+.card header h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-brand--3);
+}
+
+.card header p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-light--4);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.price {
+  font-size: 4.5rem;
+  color: var(--color-brand--3);
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.price small {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.price small:last-of-type {
+  color: var(--color-light--2);
+}
+
+.planBtn {
+  border-radius: 2rem;
+  padding: 1.5rem 3rem;
+  background: none;
+  border: 1px solid var(--color-brand--3);
+  color: var(--color-brand--3);
+  transition: all 0.5s ease;
+}
+
+.planBtn:hover {
+  background-color: var(--color-brand--3);
+  color: var(--color-light--2);
+}
+
+.planFeatures {
+  padding: 2rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-dark--1);
+}
+
+.planFeatures.standardFeatures {
+  background-color: var(--color-dark--2);
+}
+
+.planFeatures ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+
+.planFeatures ul li {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.planFeatures ul li span {
+  display: inline-block;
+  background-color: var(--color-brand--3);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--color-dark--2);
+}
+
+/* STANDARD CARD STYLES */
+
+.standardCard {
+  position: relative;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--color-dark--2), var(--color-dark--2)) padding-box,
+    linear-gradient(135deg, #034b36, #00ad09) border-box;
+  overflow: hidden;
+}
+
+.standardFeatures {
+  background-color: var(--color-brand--5);
+}
+
+.standardCard button {
+  background-color: var(--color-brand--3);
+  color: var(--color-light--2);
+}
+
+.standardCard button:hover {
+  background-color: transparent;
+}
+
+.standardCard::before {
+  content: "Standard";
+  display: inline-block;
+  position: absolute;
+  top: 1.2rem;
+  right: -3rem;
+  transform: rotate(45deg);
+  background-color: var(--color-brand--3);
+  padding: 0.5rem 1rem;
+  width: 12rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* Price fade animation */
+.price {
+  transition: opacity 0.3s ease;
+}
+
+.fade {
+  opacity: 0;
+}

@@ -1,0 +1,96 @@
+.product {
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 8rem 16rem 0;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.about {
+  width: 45%;
+  /* padding: 3rem; */
+  /* border: 1px solid red; */
+}
+
+h6 {
+  color: var(--color-light--4);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  /* margin-bottom: -1rem; */
+}
+
+.about h2 {
+  margin-bottom: 1.8rem;
+}
+
+.about .aboutContent {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutContent p {
+  color: var(--color-light--4);
+  font-weight: 300;
+  line-height: 3rem;
+  width: 90%;
+  text-align: start;
+}
+
+.productImage {
+  width: 40%;
+  /* border: 1px solid red; */
+}
+
+.italic {
+  position: relative;
+  font-style: italic;
+  color: var(--color-light--2);
+  font-weight: 600;
+  padding: 0 1rem;
+}
+
+.italic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #034b36, #00ad09);
+  transform: skewX(-12deg);
+  z-index: -1;
+}
+
+.pingo {
+  font-family: "Varela Round", sans-serif;
+  font-size: 4rem;
+}
+
+b {
+  color: var(--color-brand--3);
+}
+
+.productImage {
+  /* border: 1px solid red; */
+  /* height: 100%; */
+}
+
+/* Background image */
+.bgImageWrapper {
+  height: 100%;
+  width: 100%;
+
+  /* transform: rotate(-60deg); */
+}
+
+.productImg {
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: 10rem; */
+  margin-top: 3rem;
+}

@@ -1,0 +1,41 @@
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 100%; */
+  /* height: 100%; */
+
+  position: absolute;
+  /* inset: 0; inset: 0 = top/right/bottom/left = 0 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* border: 1px solid salmon; */
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.loader img {
+  width: 100%;
+}
+
+/* suspense / overlay mode */
+.fullScreen {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  height: 100vh;
+
+  z-index: 9999;
+  /* background: rgba(255, 255, 255, 0.3); optional */
+}

@@ -1,0 +1,444 @@
+.reportABug {
+  /* position: relative; */
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 6rem 0 4rem 0;
+}
+.reportABug h2 {
+  color: var(--color-light--4);
+}
+
+.reportABug h5 {
+  color: var(--color-light--4);
+  font-weight: normal;
+  font-size: 1.6rem;
+  margin: 2rem 0 0 0;
+}
+
+.reportABug textarea {
+  width: 100%;
+  background-color: var(--color-dark--2);
+  color: var(--color-brand--3);
+  margin-bottom: 3rem;
+}
+
+.reportABug textarea:focus {
+  outline: 1px solid var(--color-brand--3);
+}
+
+.bugsWapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  /* border: 1px solid salmon; */
+}
+
+/* Indicators */
+.indicators {
+  width: 80rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.indicators div {
+  color: var(--color-brand--3);
+  background-color: var(--color-dark--0);
+  overflow: hidden;
+}
+
+.indicators div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  border-radius: 50%;
+  font-weight: 700;
+  border: 1px solid var(--color-brand--3);
+}
+
+.indicators div span.check {
+  color: var(--color-dark--0);
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-brand--3);
+}
+
+.indicatorsLine {
+  height: 2px;
+  width: 50%;
+  border-top: 2px dashed var(--color-dark--2);
+  /* background-color: var(--color-light--4); */
+  position: absolute;
+  z-index: -1;
+}
+
+.bugs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* width: 35rem; */
+}
+
+.listOfBugs {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bug {
+  /* width: 30rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--color-brand--3);
+  transition: all 0.3s ease;
+}
+
+.bug input {
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bug input:checked {
+  background-color: inherit;
+}
+
+.bug div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.bug div h6 {
+  font-size: 1.4rem;
+  color: var(--color-light--2);
+}
+
+.bug div p {
+  font-size: 1.2rem;
+  color: var(--color-light--4);
+  font-weight: 300;
+}
+
+.uploadFile {
+  width: 20rem;
+  height: 10rem;
+  border: 2px dashed var(--color-light--4);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.6rem; */
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.uploadFile:hover {
+  border-color: var(--color-brand--3);
+  background-color: rgba(255, 255, 255, 0.03);
+  transform: translateY(-2px);
+}
+
+.uploadFile input {
+  /* display: none; */
+  opacity: 0;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.plus {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-light--3);
+  transition: transform 0.2s ease;
+  z-index: 999;
+}
+
+.uploadFile:hover .plus {
+  transform: scale(1.15);
+}
+
+.uploadFile h5 {
+  position: absolute;
+  top: 25%;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  font-weight: 400;
+
+  color: var(--color-light--4);
+}
+
+.warning {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-light--4);
+}
+
+.warning span {
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+
+.bugsWapper .btns {
+  padding: 1rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.bugsWapper .btns button {
+  width: 10rem;
+  padding: 1rem 2rem;
+  color: var(--color-dark--0);
+  background-color: var(--color-brand--3);
+  transition: all 0.5s ease;
+}
+
+.bugsWapper .btns button.nextBtn {
+  align-self: flex-end;
+
+  margin-left: auto;
+}
+
+.bugsWapper .btns button span {
+  display: inline-block;
+  margin-left: 6px;
+  transition: all 0.5s ease;
+}
+
+.bugsWapper .btns button:hover {
+  transform: translateY(-3px);
+}
+
+.bugsWapper .btns button.nextBtn:hover span {
+  transform: translateX(3px);
+}
+
+.bugsWapper .btns button.prevBtn {
+  background: none;
+  border: 1px solid var(--color-light--4);
+  color: var(--color-light--4);
+  width: 12rem;
+}
+
+.bugsWapper .btns button.prevBtn:hover span {
+  transform: translateX(-3px);
+}
+
+.details {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  /* border: 1px solid salmon; */
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  /* border: 1px solid salmon; */
+}
+
+.inputs input {
+  width: 100%;
+  background: var(--color-dark--2);
+  color: var(--color-brand--3);
+  padding: 1rem 2rem;
+}
+
+.inputs label input:focus {
+  outline: 1px solid var(--color-brand--3);
+}
+
+.inputs label {
+  font-size: 1.4rem;
+  color: var(--color-light--3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.genderOptions {
+  display: flex;
+  gap: 3rem;
+}
+
+.genderOptions div {
+  display: flex;
+  gap: 1rem;
+}
+
+.genderOptions div input[type="radio"] {
+  appearance: none;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 1px solid var(--color-brand--3);
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.genderOptions div input[type="radio"]:checked {
+  background-color: var(--color-brand--3);
+}
+
+.genderOptions div input:focus {
+  outline: none;
+}
+
+.genderOptions div span {
+  color: var(--color-light--4);
+  font-weight: 400;
+}
+
+.inputs label select {
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  color: var(--color-brand--3);
+  background-color: var(--color-dark--2);
+}
+
+.inputs label select option {
+  border: 1px solid var(--color-brand--3);
+  color: var(--color-brand--3);
+}
+
+.inputs label select:focus {
+  outline: 1px solid var(--color-brand--3);
+}
+
+/* Message */
+.successMessage,
+.errorMessage {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  z-index: 9999;
+  width: 35rem;
+  border-radius: 1rem;
+  background-color: var(--color-dark--1);
+
+  animation: notificationSlide 10s ease forwards;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.message span {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-brand--3);
+  color: var(--color-dark--0);
+}
+
+.errorMessage .message span {
+  background-color: tomato;
+}
+
+.message p {
+  font-size: 1.2rem;
+  color: var(--color-light--4);
+}
+
+.message div p:first-of-type {
+  color: var(--color-light--3);
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Animate the success message */
+@keyframes notificationSlide {
+  0% {
+    transform: translate(-50%, -120%);
+    opacity: 0;
+  }
+
+  10% {
+    transform: translate(-50%, 20px);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translate(-50%, 20px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -120%);
+    opacity: 0;
+  }
+}
+
+/* Form animation */
+.formPageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* border: 1px solid salmon; */
+
+  animation: pageSlideIn 1.5s ease;
+}
+
+/* Slide in from below */
+@keyframes pageSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* start slightly lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* slide into place */
+  }
+}
