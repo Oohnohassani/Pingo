@@ -8,3 +8,6 @@ export const FAKE_USER = {
   username: "oohnohassani",
   password: "itsHassaniAgain111",
 };
+
+// Avoid: This is the old development server and is no longer in use! ✌️
+// We moved to './server/servers.js'

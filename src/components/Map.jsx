@@ -45,8 +45,8 @@ function Map() {
   const [showForm, setShowForm] = useState(false);
 
   // Geolocation API
-  const { geoLocationPosition } = useGeolocation();
-  // console.log("Your position is 📌: ", geoLocationPosition); // [-1.2762932998362289, 36.851253801696565]
+  const { geoLocationPosition, isLoading, error } = useGeolocation();
+  // console.log("Your position is 📌: ", geoLocationPosition); // [-1.2762932998362289, 36.851253801696565] or null
 
   // Ref
   const nodeRef = useRef(null); //  → Refrences Draggable element with Form inside it.
@@ -75,8 +75,8 @@ function Map() {
   // Set map position on mount
   useEffect(
     function () {
+      if (geoLocationPosition === null || error) return;
       const timer = setTimeout(function () {
-        if (!geoLocationPosition) return;
         setCurrentPosition(geoLocationPosition);
       }, 5000);
 
@@ -85,7 +85,7 @@ function Map() {
         clearTimeout(timer);
       };
     },
-    [geoLocationPosition],
+    [geoLocationPosition, error],
   );
 
   // Reset ULR and Prams on page reloads --- IMPORTANT ----
@@ -268,11 +268,12 @@ function Map() {
       {/* Note: If we tie it to the geoloaction API, it appears and disappears immediately, so we figured wewill do the logic in the button itself */}
 
       {/* Position button */}
-      {/* {!geoLocationPosition && ( */}
+
       <PositionButton position={geoLocationPosition}>
-        {"Gettin your position..."}
+        {error
+          ? "Please allow location access & reload 😢"
+          : "Getting your current position ⚡..."}
       </PositionButton>
-      {/* )} */}
 
       {/* DRAGGABLE FORM */}
       {/* {showForm && (  FIXME*/}

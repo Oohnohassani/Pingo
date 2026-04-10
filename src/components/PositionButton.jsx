@@ -6,7 +6,7 @@ function PositionButton({ position, children }) {
 
   useEffect(() => {
     const timer = setTimeout(function () {
-      if (position) setShow(false);
+      if (position || !position) setShow(false);
     }, 3000);
 
     return () => clearTimeout(timer);
