@@ -14,8 +14,9 @@ const AuthenticationContext = createContext();
 
 // Initial state
 const initialState = {
-  // isAuthenticated: JSON.parse(localStorage.getItem("isAuthenticated")) || false,
-  isAuthenticated: false, // FIXME 😭
+  isAuthenticated:
+    JSON.parse(sessionStorage.getItem("isAuthenticated")) || false,
+  // isAuthenticated: false, // FIXME 😭
   isLoading: false,
 };
 
@@ -26,11 +27,12 @@ function reducer(state, action) {
       return { ...state, isLoading: true };
 
     case "login":
-      // localStorage.setItem("isAuthenticated", true); // state persists reloads
+      sessionStorage.setItem("isAuthenticated", true); // state persists reloads
       return { ...state, isAuthenticated: true, isLoading: false };
 
     case "logout":
-      // localStorage.setItem("isAuthenticated", false); // state persists through reloads
+      // sessionStorage.removeItem("isAuthenticated"); // remove or clear session storage
+      sessionStorage.clear(); // remove or clear session storage
       return { ...state, isAuthenticated: false, isLoading: false };
 
     default:
