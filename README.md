@@ -1,4 +1,4 @@
-# 🌍 Pingo — Travel Tracking & Planning App
+## 🌍 Pingo — Travel Tracking & Planning App
 
 **Pingo** is a travel tracking and planning app that lets users map visited cities, save notes and memories, and organize trips visually. With personalized recommendations and smart planning tools, it helps travelers relive past journeys and discover new destinations. 🌍✈️
 
@@ -122,6 +122,14 @@ src/
 - 📱 Improve mobile responsiveness
 - 🤝 Enable trip sharing & collaboration
 - 🧭 Advanced trip planning tools
+- 🖼️ Optimize images using WebP and lazy loading
+- 🌙 Add a light and dark mode support
+
+### 🐞 Found a bug?Bug report
+- 🐞 Give us a feeback in our more advanced bug reporting and feedback system
+- Users can currently report bugs through the in-app **"Report a Bug"** section
+- Shortcut support included: `Ctrl + Shift + X` instantly opens the bug report page
+- Future plans include screenshots, issue categories, and automated error logging
 
 ### 👨‍💻 Author
 
